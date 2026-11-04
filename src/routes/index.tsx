@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CalendarDays, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX, Youtube } from "lucide-react";
+import { CalendarDays, ChevronDown, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX, Youtube } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -57,7 +57,7 @@ export const Route = createFileRoute("/")({
       { title: "Nanubala Kunadruthi & Surya Teja — Wedding Invitation" },
       {
         name: "description",
-        content: "The wedding invitation of Nanubala Kunadruthi and Surya Teja at Sri Sai Baba Kalyana Mandapam, Bethamcherla, Nandyal District.",
+        content: "The wedding invitation of Nanubala Kunadruthi and Surya Teja at Shirdi Sai Convention Hall, Bethamcherla, Nandyal District.",
       },
       { property: "og:title", content: "Nanubala Kunadruthi & Surya Teja — Wedding Invitation" },
       {
@@ -217,14 +217,19 @@ function WeddingHero() {
 
         <div className="hero-content">
           <p className="hero-invocation">|| Srirasthu Shubhamasthu ||</p>
+          <p className="hero-invite">Together with our families, you are invited to celebrate the wedding of</p>
           <h1 className="hero-name">{splitName("Kunadruthi")}</h1>
           <p className="hero-ampersand">&</p>
           <p className="hero-name">{splitName("Surya Teja")}</p>
           <p className="hero-date">Thursday, November 26, 2026</p>
           <p className="hero-venue">
             <span className="hero-at">at</span>{" "}
-            <span className="hero-location">Sri Sai Baba Kalyana Mandapam, Bethamcherla</span>
+            <span className="hero-location">Shirdi Sai Convention Hall, Bethamcherla</span>
           </p>
+          <div className="hero-scroll" aria-hidden="true">
+            <span className="hero-scroll-label">Scroll Down</span>
+            <ChevronDown className="hero-scroll-chevron" aria-hidden="true" />
+          </div>
         </div>
       </section>
 
@@ -329,7 +334,7 @@ function WeddingHero() {
 
               <div className="cover-group cover-meta">
                 <p className="cover-date">26 November 2026</p>
-                <p className="cover-city">Sri Sai Baba Kalyana Mandapam, Bethamcherla</p>
+                <p className="cover-city">Shirdi Sai Convention Hall, Bethamcherla</p>
               </div>
 
               <button className="cover-cta" type="button" onClick={openInvitation}>
@@ -460,7 +465,7 @@ function AuspiciousHourSection() {
             <div className="muhurtham-meta">
               <p><CalendarDays aria-hidden="true" /> Thursday, 26th November 2026</p>
               <p><Clock3 aria-hidden="true" /> 9:31 AM</p>
-              <p><MapPin aria-hidden="true" /> Sri Sai Baba Kalyana Mandapam, Bethamcherla, Nandyal District</p>
+              <p><MapPin aria-hidden="true" /> Shirdi Sai Convention Hall, Bethamcherla, Nandyal District</p>
             </div>
           </article>
         </div>
@@ -473,8 +478,8 @@ function VenueSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [copied, setCopied] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const venueName = "Sri Sai Baba Kalyana Mandapam, Bethamcherla";
-  const mapsUrl = "https://www.google.com/maps/search/?api=1&query=Sri%20Sai%20Baba%20Kalyana%20Mandapam%2C%20Bethamcherla%2C%20Nandyal";
+  const venueName = "Shirdi Sai Convention Hall, Bethamcherla";
+  const mapsUrl = "https://www.google.com/maps/search/?api=1&query=15.461459%2C78.157655";
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -493,7 +498,7 @@ function VenueSection() {
   }, []);
 
   const shareLocation = async () => {
-    const shareData = { title: "Anjali & Madhan's Wedding Venue", text: venueName, url: mapsUrl };
+    const shareData = { title: "Kunadruthi & Surya Teja's Wedding Venue", text: venueName, url: mapsUrl };
     try {
       if (navigator.share) {
         await navigator.share(shareData);
@@ -522,8 +527,8 @@ function VenueSection() {
 
         <div className="venue-map ceremonial-reveal">
           <iframe
-            title="Map showing Sri Sai Baba Kalyana Mandapam, Bethamcherla"
-            src="https://www.google.com/maps?q=Sri%20Sai%20Baba%20Kalyana%20Mandapam%2C%20Bethamcherla&output=embed"
+            title="Map showing Shirdi Sai Convention Hall, Bethamcherla"
+            src="https://www.google.com/maps?q=15.461459%2C78.157655&output=embed"
             width="100%"
             height="320"
             loading="lazy"

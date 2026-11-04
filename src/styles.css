@@ -89,9 +89,18 @@ button, input, textarea, select { font: inherit; }
 
 .wedding-hero--revealed .hero-invocation { animation: soft-rise .8s .65s ease-out forwards; }
 
+.hero-invite {
+  margin: 0 0 .55rem;
+  font: italic 400 clamp(.85rem, 3.4vw, 1.05rem)/1.55 "Cormorant Garamond", serif;
+  color: var(--maroon);
+  opacity: 0;
+}
+
+.wedding-hero--revealed .hero-invite { animation: soft-rise .8s .55s ease-out forwards; }
+
 .hero-name {
   margin: .05em 0;
-  font: 400 clamp(2.4rem, 12vw, 3.8rem)/1.05 "Great Vibes", cursive;
+  font: 400 clamp(2.4rem, 12vw, 3.8rem)/1.05 "Paprika", cursive;
   color: var(--maroon);
   letter-spacing: 0;
 }
@@ -148,6 +157,35 @@ button, input, textarea, select { font: inherit; }
 .wedding-hero--revealed .hero-venue { animation: soft-rise .75s 1.26s ease-out forwards; }
 .hero-at { color: var(--temple-green); font-style: italic; font-size: .95em; }
 .hero-location { font-family: Marcellus, serif; text-transform: uppercase; letter-spacing: .14em; font-weight: 500; font-size: .72rem; }
+
+.hero-scroll {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .1rem;
+  color: var(--temple-green);
+  opacity: 0;
+}
+
+.wedding-hero--revealed .hero-scroll { animation: soft-rise .8s 1.7s ease-out forwards; }
+
+.hero-scroll-label {
+  font: 400 .62rem/1 Marcellus, serif;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.hero-scroll-chevron {
+  width: 1.1rem;
+  height: 1.1rem;
+  animation: scroll-nudge 1.6s 2.5s ease-in-out infinite;
+}
+
+@keyframes scroll-nudge {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(.3rem); opacity: .5; }
+}
 
 .couple-section {
   position: relative;
