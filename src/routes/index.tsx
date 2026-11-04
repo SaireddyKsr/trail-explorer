@@ -20,7 +20,7 @@ const railTopUrl = `${ASSETS}/rail-top.png`;
 const templeSceneryUrl = `${ASSETS}/temple-scenery.png`;
 const countdownWallUrl = `${ASSETS}/countdown-wall.webp`;
 const bridePortraitUrl = `${ASSETS}/bride-portrait-close.webp`;
-const groomPortraitUrl = `${ASSETS}/groom-portrait-close.webp`;
+const groomPortraitUrl = `${ASSETS}/groom-portrait-wide.webp`;
 const coupleMomentsUrls = [
   `${ASSETS}/couple-moments-1.webp`,
   `${ASSETS}/couple-moments-2.webp`,
