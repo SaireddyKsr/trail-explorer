@@ -247,10 +247,10 @@ button, input, textarea, select { font: inherit; }
   box-shadow: 0 1.2rem 2.4rem rgba(43, 26, 14, .18), 0 0 0 5px color-mix(in srgb, var(--gold) 28%, transparent);
 }
 .couple-role { margin: 0 0 .75rem; font: 400 .68rem/1.5 Marcellus, serif; color: var(--gold); letter-spacing: .28em; text-transform: uppercase; }
-.couple-person h3 { margin: 0 0 1.5rem; font: 400 clamp(2rem, 5vw, 3.35rem)/1.1 "Great Vibes", cursive; color: var(--maroon); letter-spacing: 0; }
+.couple-person h3 { margin: 0 0 1.5rem; font: 400 clamp(2rem, 5vw, 3.35rem)/1.1 "Paprika", cursive; color: var(--maroon); letter-spacing: 0; }
 .couple-profession { margin: -0.75rem 0 1.4rem; font: 400 .68rem/1.5 Marcellus, serif; color: var(--ink); letter-spacing: .24em; text-indent: .24em; text-transform: uppercase; opacity: .8; }
 .couple-relation { display: block; margin-bottom: .65rem; font: 400 .63rem/1.5 Marcellus, serif; color: var(--temple-green); letter-spacing: .3em; text-transform: uppercase; }
-.couple-parents { max-width: 22rem; margin: 0 auto; font: 400 clamp(.95rem, 2vw, 1.12rem)/1.75 "Cormorant Garamond", serif; color: var(--ink); }
+.couple-parents { max-width: 22rem; margin: 0 auto; font: 400 clamp(1.08rem, 2.4vw, 1.32rem)/1.75 "Cormorant Garamond", serif; color: var(--ink); }
 .couple-parents span { display: block; color: var(--maroon); font-style: italic; }
 
 .couple-union { height: 11rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .75rem; }
@@ -323,7 +323,7 @@ button, input, textarea, select { font: inherit; }
 
 .cover-group { width: 100%; display: flex; flex-direction: column; align-items: center; }
 .cover-label { margin: 0 0 .55em; font: 400 clamp(9px, 2.9cqw, 13px)/1.6 Marcellus, serif; letter-spacing: .34em; text-indent: .34em; text-transform: uppercase; color: var(--maroon); opacity: .86; }
-.cover-names { margin: 0; max-width: 100%; display: flex; flex-direction: column; align-items: center; font: 400 clamp(28px, 10.2cqw, 52px)/1.02 "Great Vibes", cursive; color: var(--maroon); }
+.cover-names { margin: 0; max-width: 100%; display: flex; flex-direction: column; align-items: center; font: 400 clamp(28px, 10.2cqw, 52px)/1.02 "Paprika", cursive; color: var(--maroon); }
 .cover-amp { width: 100%; margin: .1em 0 .02em; display: flex; align-items: center; justify-content: center; gap: .55em; font-size: .38em; line-height: 1; color: var(--gold); }
 .cover-amp i { font-style: normal; }
 .cover-amp::before, .cover-amp::after { content: ""; width: 1.9em; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); opacity: .8; }
@@ -502,13 +502,13 @@ button, input, textarea, select { font: inherit; }
 }
 .footer-hosts::before { top: -.55em; }
 .footer-hosts::after { bottom: -.55em; }
-.footer-hosts-label { font: 400 clamp(.52rem, 1.35cqw, 1rem)/1.5 Marcellus, serif; letter-spacing: .42em; text-indent: .42em; text-transform: uppercase; color: var(--temple-green); }
-.footer-hosts-name { font: 400 clamp(1rem, 2.65cqw, 2.1rem)/1.15 "Great Vibes", cursive; color: var(--maroon-deep); }
+.footer-hosts-label { font: 700 clamp(.55rem, 1.4cqw, 1.05rem)/1.5 "Cormorant Garamond", serif; letter-spacing: .38em; text-indent: .38em; text-transform: uppercase; color: var(--temple-green); }
+.footer-hosts-name { font: 400 clamp(1.15rem, 3.1cqw, 2.5rem)/1.15 "Paprika", cursive; color: var(--maroon-deep); }
 .footer-hosts-join { font: italic 400 clamp(.62rem, 1.55cqw, 1.2rem)/1.5 "Cormorant Garamond", serif; color: var(--gold); }
 .footer-hosts-place { font: italic 400 clamp(.6rem, 1.5cqw, 1.15rem)/1.5 "Cormorant Garamond", serif; color: var(--ink); }
 .footer-compliments { margin-top: .55em !important; display: inline-flex; flex-direction: column; align-items: center; gap: .1em; }
 .footer-compliments-label { font: 400 clamp(.5rem, 1.25cqw, .95rem)/1.5 Marcellus, serif; letter-spacing: .38em; text-indent: .38em; text-transform: uppercase; color: var(--temple-green); }
-.footer-compliments-name { font: 400 clamp(1.1rem, 3cqw, 2.3rem)/1.1 "Great Vibes", cursive; color: var(--maroon-deep); }
+.footer-compliments-name { font: 400 clamp(1.2rem, 3.2cqw, 2.5rem)/1.1 "Paprika", cursive; color: var(--maroon-deep); }
 .footer-reveal { opacity: 0; transform: translateY(1rem); }
 .invitation-footer--visible .footer-reveal { animation: footer-rise .9s cubic-bezier(.22,1,.36,1) forwards; }
 .invitation-footer--visible .footer-blessings { animation-delay: .12s; }
